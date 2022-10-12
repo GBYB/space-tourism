@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+.header__mobile {
+  width: 100%;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+.header__mobile #logo {
+  margin-top: 7.5%;
+  margin-left: 5%;
+}
+.header__mobile div {
+  margin-top: 7.5%;
+  margin-right: 5%;
+}
+.header__tablet {
+  display: none;
+}
+.header__desktop {
+  display: none;
+}
+.header .navbar a {
+  text-decoration: none;
+  height: 100%;
+}
+
+.sidebar {
+  width: 68%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  right: 0;
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+.sidebar__content {
+  margin-left: 20%;
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sidebar__content .home,
+.sidebar__content .destination,
+.sidebar__content .crew,
+.sidebar__content .technology {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  font-size: 5vw;
+  margin-bottom: 2vh;
+}
+.sidebar .close {
+  position: relative;
+  padding: 5%;
+}
+.sidebar .close-container {
+  position: absolute;
+  top: 5%;
+  right: 7.5%;
+}
+.sidebar .close-container img {
+  width: 8vw;
+  height: auto;
+}
+
+@media screen and (max-width: 280px) {
+  .header #logo {
+    width: 15vw;
+    height: auto;
+  }
+  .header #bar {
+    width: 10vw;
+    height: auto;
+  }
+  .home,
+.destination,
+.crew,
+.technology {
+    font-size: 9vw;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 360px) {
+  .sidebar__content {
+    height: 100%;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar .home,
+.sidebar .destination,
+.sidebar .crew,
+.sidebar .technology {
+    font-size: 10vw;
+  }
+  .home,
+.destination,
+.crew,
+.technology {
+    font-size: 10vw;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .header {
+    background-color: #0b0d17;
+  }
+  .header__mobile {
+    display: none;
+  }
+  .header__desktop {
+    display: none;
+  }
+  .header__tablet {
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .header__tablet img {
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  .header__tablet .navbar {
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+  }
+  .header__tablet .navbar .home,
+.header__tablet .navbar .destination,
+.header__tablet .navbar .crew,
+.header__tablet .navbar .technology {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 6% 0;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    border-bottom: transparent 2px solid;
+    font-size: 3vw;
+  }
+  .header__tablet .navbar .home:hover,
+.header__tablet .navbar .destination:hover,
+.header__tablet .navbar .crew:hover,
+.header__tablet .navbar .technology:hover {
+    border-bottom: #979797 2px solid;
+  }
+  .header__tablet .navbar .home:nth-child(1),
+.header__tablet .navbar .destination:nth-child(1),
+.header__tablet .navbar .crew:nth-child(1),
+.header__tablet .navbar .technology:nth-child(1) {
+    margin-left: 6%;
+  }
+  .header__tablet .navbar .home:nth-child(4),
+.header__tablet .navbar .destination:nth-child(4),
+.header__tablet .navbar .crew:nth-child(4),
+.header__tablet .navbar .technology:nth-child(4) {
+    margin-right: 6%;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__mobile {
+    display: none;
+  }
+  .header__tablet {
+    display: none;
+  }
+  .header__desktop {
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .header__desktop img {
+    width: 6vw;
+    margin-left: 5%;
+  }
+  .header__desktop .line {
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    height: 0.2vh;
+    width: 15vw;
+    position: absolute;
+    left: 15vw;
+    z-index: 2;
+  }
+  .header__desktop .navbar {
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    height: 100%;
+    margin: 1.5%;
+    justify-content: space-between;
+    display: flex;
+    width: 70%;
+  }
+  .header__desktop .navbar .home,
+.header__desktop .navbar .destination,
+.header__desktop .navbar .crew,
+.header__desktop .navbar .technology {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 6% 0;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 5% 0;
+    border-bottom: transparent 2px solid;
+  }
+  .header__desktop .navbar .home:nth-child(1),
+.header__desktop .navbar .destination:nth-child(1),
+.header__desktop .navbar .crew:nth-child(1),
+.header__desktop .navbar .technology:nth-child(1) {
+    margin-left: 12%;
+  }
+  .header__desktop .navbar .home:nth-child(4),
+.header__desktop .navbar .destination:nth-child(4),
+.header__desktop .navbar .crew:nth-child(4),
+.header__desktop .navbar .technology:nth-child(4) {
+    margin-right: 18%;
+  }
+  .header__desktop .navbar .home:hover,
+.header__desktop .navbar .destination:hover,
+.header__desktop .navbar .crew:hover,
+.header__desktop .navbar .technology:hover {
+    border-bottom: #979797 2px solid;
+  }
+  .sidebar {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+.container_crew {
+  background-image: url(../../assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: auto;
+}
+.container_crew_content {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+.container_crew_content_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_crew_content_title h3:nth-child(1) {
+  color: rgba(255, 255, 255, 0.25);
+  margin-right: 5vw;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.container_crew_content_title h3:nth-child(2) {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.container_crew_content_title h3 {
+  color: white;
+  letter-spacing: 2.7px;
+  font-size: 1.2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.container_crew_content_display {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.container_crew_content_display_left {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.container_crew_content_display_left_description {
+  text-align: center;
+}
+.container_crew_content_display_left_description h3 {
+  color: white;
+  letter-spacing: 2.7px;
+  font-size: 1.4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.container_crew_content_display_left_description h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+.container_crew_content_display_left_description .role {
+  color: rgba(255, 255, 255, 0.5);
+}
+.container_crew_content_display_left_description h4 {
+  font-size: 4vw;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  margin: 2vh 5vw;
+  line-height: 1.75rem;
+  color: rgb(208, 214, 249);
+}
+.container_crew_content_display_left_crew_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_crew_content_display_left_crew_nav hr {
+  border-color: rgba(255, 255, 255, 0.25);
+  width: 80vw;
+}
+.container_crew_content_display_left_crew_nav_slider {
+  margin-top: 2vh;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container_crew_content_display_left_crew_nav_slider_circle {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.container_crew_content_display_left_crew_nav_slider_circle:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.container_crew_content_display_right_image {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container_crew_content_display_right_image img {
+  width: 50vw;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .container_crew {
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+  .container_crew .crew {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_crew_content {
+    margin-top: 10%;
+  }
+  .container_crew_content_title {
+    justify-content: flex-start;
+  }
+  .container_crew_content_title h3 {
+    font-size: 3vw;
+    margin: 5%;
+  }
+  .container_crew_content_display {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_crew_content_display_left {
+    flex-direction: column;
+  }
+  .container_crew_content_display_left h2 {
+    font-size: 5vw;
+  }
+  .container_crew_content_display_left_description h4 {
+    font-size: 3vw;
+    line-height: 3rem;
+  }
+  .container_crew_content_display_left_description .role {
+    font-size: 4vw;
+  }
+  .container_crew_content_display_left_crew_nav hr {
+    display: none;
+  }
+  .container_crew_content_display_left_crew_nav_slider_circle {
+    width: 2vw;
+    height: 2vw;
+  }
+  .container_crew_content_display_right {
+    margin-top: 5vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .container_crew {
+    background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  }
+  .container_crew .crew {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_crew_content {
+    margin-top: 20vh;
+  }
+  .container_crew_content_title {
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 10vw;
+  }
+  .container_crew_content_title h3 {
+    font-size: 2.5vw;
+  }
+  .container_crew_content_display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+  }
+  .container_crew_content_display_right {
+    width: 20vw;
+  }
+  .container_crew_content_display_right_image {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  .container_crew_content_display_right_image img {
+    width: 100%;
+  }
+  .container_crew_content_display_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10vw;
+  }
+  .container_crew_content_display_left_description {
+    text-align: left;
+  }
+  .container_crew_content_display_left_description h2 {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    text-align: left;
+    font-size: 5vw;
+  }
+  .container_crew_content_display_left_description h4 {
+    line-height: 3.5vw;
+    font-size: 2.5vw;
+    margin: 0;
+  }
+  .container_crew_content_display_left_description .role {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    font-size: 3vw;
+  }
+  .container_crew_content_display_left_crew_nav {
+    align-items: stretch;
+  }
+  .container_crew_content_display_left_crew_nav hr {
+    display: none;
+  }
+  .container_crew_content_display_left_crew_nav_slider {
+    width: 50%;
+    justify-content: space-around;
+  }
+  .container_crew_content_display_left_crew_nav_slider_circle {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+@media screen and (max-height: 768px) and (min-width: 1024px) {
+  .container_crew_content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50vw;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container_crew {
+    background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  }
+  .container_crew .crew {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_crew_content {
+    margin-top: 20vh;
+  }
+  .container_crew_content_title {
+    justify-content: flex-start;
+    margin-left: 10vw;
+  }
+  .container_crew_content_title h3 {
+    font-size: 2.5vw;
+  }
+  .container_crew_content_display {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+  }
+  .container_crew_content_display_crew_nav hr {
+    display: none;
+  }
+  .container_crew_content_display_right {
+    width: 20vw;
+  }
+  .container_crew_content_display_right_image {
+    height: 100%;
+    align-items: flex-end;
+  }
+  .container_crew_content_display_right_image img {
+    width: 100%;
+  }
+  .container_crew_content_display_left {
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .container_crew_content_display_left_description {
+    text-align: left;
+  }
+  .container_crew_content_display_left_description h2 {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    font-size: 4vw;
+  }
+  .container_crew_content_display_left_description .role {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    font-size: 2.5vw;
+  }
+  .container_crew_content_display_left_description h4 {
+    line-height: 3vw;
+    font-size: 2vw;
+    margin: 0;
+  }
+  .container_crew_content_display_left_crew_nav {
+    align-items: stretch;
+  }
+  .container_crew_content_display_left_crew_nav hr {
+    display: none;
+  }
+  .container_crew_content_display_left_crew_nav_slider {
+    width: 50%;
+    justify-content: space-around;
+  }
+  .container_crew_content_display_left_crew_nav_slider_circle {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+}/*# sourceMappingURL=crew.css.map */

@@ -1,0 +1,10 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #image_vehicle {
+    content: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+  }
+}
+@media screen and (min-width: 1440px) {
+  #image_vehicle {
+    content: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+  }
+}/*# sourceMappingURL=vehicle.css.map */

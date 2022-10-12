@@ -1,0 +1,13 @@
+// desktop design
+@media screen and (min-width: "1024px") and (max-width:"1440px") {
+    #image_vehicle {
+        content: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+    }
+}
+
+// big desktop design
+@media screen and (min-width: "1440px") {
+    #image_vehicle {
+        content: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+    }
+}

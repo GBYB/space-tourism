@@ -1,0 +1,10 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #image_port {
+    content: url("../../assets/technology/image-spaceport-portrait.jpg");
+  }
+}
+@media screen and (min-width: 1440px) {
+  #image_port {
+    content: url("../../assets/technology/image-spaceport-portrait.jpg");
+  }
+}/*# sourceMappingURL=port.css.map */

@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+.container_technology {
+  background-image: url(../../assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: auto;
+}
+.container_technology_content {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+.container_technology_content_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_technology_content_title h3:nth-child(1) {
+  color: rgba(255, 255, 255, 0.25);
+  margin-right: 5vw;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.container_technology_content_title h3:nth-child(2) {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.container_technology_content_title h3 {
+  color: white;
+  letter-spacing: 2.7px;
+  font-size: 1.2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.container_technology_content_display {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+.container_technology_content_display_left {
+  width: 100%;
+}
+.container_technology_content_display_right_image {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container_technology_content_display_right_image img {
+  width: 100%;
+}
+.container_technology_content_display_left {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.container_technology_content_display_left_tech_nav {
+  width: 60%;
+  margin: 2vh auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container_technology_content_display_left_tech_nav_btn {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_technology_content_display_left_tech_nav_btn_selected {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: white;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.container_technology_content_display_left_tech_nav_btn:hover {
+  cursor: pointer;
+  border-color: #fff;
+}
+.container_technology_content_display_left_description {
+  text-align: center;
+}
+.container_technology_content_display_left_description h3 {
+  color: white;
+  letter-spacing: 2.7px;
+  font-size: 1.4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.container_technology_content_display_left_description h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+.container_technology_content_display_left_description .role {
+  color: rgba(255, 255, 255, 0.5);
+}
+.container_technology_content_display_left_description h4 {
+  font-size: 4vw;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  margin: 2vh 5vw;
+  line-height: 1.75rem;
+  color: rgb(208, 214, 249);
+}
+
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .container_technology {
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+  .container_technology .technology {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_technology_content {
+    margin-top: 10%;
+  }
+  .container_technology_content_title {
+    justify-content: flex-start;
+  }
+  .container_technology_content_title h3 {
+    font-size: 3vw;
+    margin: 5%;
+  }
+  .container_technology_content_display {
+    height: auto;
+  }
+  .container_technology_content_display_left_tech_nav_btn {
+    width: 10vw;
+    height: 10vw;
+  }
+  .container_technology_content_display_left_tech_nav_btn_selected {
+    width: 10vw;
+    height: 10vw;
+  }
+  .container_technology_content_display_left h2 {
+    font-size: 5vw;
+  }
+  .container_technology_content_display_left_description h4 {
+    font-size: 3vw;
+    line-height: 3rem;
+  }
+  .container_technology_content_display_left_description .role {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .container_technology {
+    background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  }
+  .container_technology .technology {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_technology_content {
+    margin-top: 20vh;
+  }
+  .container_technology_content_title {
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 10vw;
+  }
+  .container_technology_content_title h3 {
+    font-size: 2.5vw;
+  }
+  .container_technology_content_display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container_technology_content_display_right_image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container_technology_content_display_right_image img {
+    height: 65%;
+    width: auto;
+  }
+  .container_technology_content_display_left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-left: 5vw;
+  }
+  .container_technology_content_display_left_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .container_technology_content_display_left_description h2 {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    text-align: left;
+    font-size: 5vw;
+  }
+  .container_technology_content_display_left_description h4 {
+    line-height: 3.5vw;
+    font-size: 2.5vw;
+    margin: 0;
+  }
+  .container_technology_content_display_left_description .role {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    font-size: 3vw;
+  }
+  .container_technology_content_display_left_tech_nav {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .container_technology_content_display_left_tech_nav_btn {
+    justify-content: space-around;
+    width: 4vw;
+    height: 4vw;
+  }
+  .container_technology_content_display_left_tech_nav_btn_selected {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+@media screen and (max-height: 768px) and (min-width: 1024px) {
+  .container_technology_content_display_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50vw;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container_technology {
+    background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  }
+  .container_technology .technology {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_technology_content {
+    margin-top: 20vh;
+  }
+  .container_technology_content_title {
+    justify-content: flex-start;
+    margin-left: 10vw;
+  }
+  .container_technology_content_title h3 {
+    font-size: 2.5vw;
+  }
+  .container_technology_content_display {
+    display: flex;
+    flex-direction: row;
+  }
+  .container_technology_content_display_right {
+    display: flex;
+    justify-content: center;
+  }
+  .container_technology_content_display_right_image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container_technology_content_display_right_image img {
+    height: 80%;
+    width: auto;
+  }
+  .container_technology_content_display_left {
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .container_technology_content_display_left_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .container_technology_content_display_left_description h2 {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    font-size: 4vw;
+  }
+  .container_technology_content_display_left_description .role {
+    margin: 0;
+    margin-bottom: 1.5vh;
+    font-size: 2.5vw;
+  }
+  .container_technology_content_display_left_description h4 {
+    line-height: 3vw;
+    font-size: 2vw;
+    margin: 0;
+  }
+  .container_technology_content_display_left_tech_nav {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .container_technology_content_display_left_tech_nav_btn {
+    justify-content: space-around;
+    width: 5vw;
+    height: 5vw;
+  }
+  .container_technology_content_display_left_tech_nav_btn_selected {
+    width: 5vw;
+    height: 5vw;
+  }
+}/*# sourceMappingURL=technology.css.map */

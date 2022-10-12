@@ -1,0 +1,14 @@
+// desktop design
+@media screen and (min-width: "1024px") and (max-width:"1440px") {
+    #image_capsule {
+        content: url("../../assets/technology/image-space-capsule-portrait.jpg");
+    }
+}
+
+// big desktop design
+@media screen and (min-width: "1440px") {
+
+    #image_capsule {
+        content: url("../../assets/technology/image-space-capsule-portrait.jpg");
+    }
+}

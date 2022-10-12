@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+.container_destination {
+  background-image: url(../../assets/destination/background-destination-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: auto;
+}
+.container_destination h1 {
+  color: white;
+}
+.container_destination h3 {
+  color: white;
+  font-size: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.container_destination_content {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.container_destination_content_left_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_destination_content_left_title h3:nth-child(1) {
+  color: rgba(255, 255, 255, 0.25);
+  margin-right: 5vw;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.container_destination_content_left_title h3:nth-child(2) {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.container_destination_content_left_title h3 {
+  letter-spacing: 2.7px;
+}
+.container_destination_content_left_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+.container_destination_content_left_image img {
+  width: 50vw;
+}
+.container_destination_content_right_destination_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container_destination_content_right_destination_nav_link {
+  border: none;
+  padding: 0;
+  font-size: 1.25rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: rgb(208, 214, 249);
+  background: transparent;
+  border-bottom: 2px solid transparent;
+}
+.container_destination_content_right_destination_nav_link:nth-child(1) {
+  border-bottom: 2px solid white;
+}
+.container_destination_content_right_destination_nav_link:hover {
+  border-bottom: 2px solid #979797;
+}
+.container_destination_content_right_destination_nav a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  color: rgb(208, 214, 249);
+}
+.container_destination_content_right_destination_nav a:nth-child(1) {
+  border-bottom: 2px solid white;
+}
+.container_destination_content_right_destination_nav a:hover {
+  border-bottom: 2px solid white;
+}
+.container_destination_content_right_description {
+  text-align: center;
+}
+.container_destination_content_right_description h1 {
+  font-size: 15vw;
+  margin: 2vh 0;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+.container_destination_content_right_description #description_text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  color: rgb(208, 214, 249);
+}
+.container_destination_content_right_description hr {
+  border-color: rgba(255, 255, 255, 0.25);
+  width: 80vw;
+}
+.container_destination_content_right_description_specifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container_destination_content_right_description_specifications h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+}
+.container_destination_content_right_description_specifications_measurement {
+  font-size: 4vw;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  margin: 2vh 10vw;
+  line-height: 1.5rem;
+  color: rgb(208, 214, 249);
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 200px) {
+  .container_destination h1 {
+    font-size: 12vw;
+  }
+  .container_destination h4 {
+    font-size: 9vw;
+  }
+  .container_destination_content_left_title {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container_destination_content_left_title h3 {
+    font-size: 15vw;
+    margin-top: 0;
+  }
+  .container_destination_content_right_destination_nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container_destination_content_right_destination_nav a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 20%;
+    font-size: 15vw;
+  }
+  .container_destination_content_right_description h4 {
+    font-size: 9vw;
+  }
+  .container_destination_content_right_description_specifications h2 {
+    font-size: 12vw;
+  }
+  .container_destination_content_right_description_specifications_measurement {
+    font-size: 9vw;
+  }
+}
+@media screen and (min-width: 201px) and (max-width: 280px) {
+  .container_destination h1 {
+    font-size: 10vw;
+  }
+  .container_destination h3,
+.container_destination a {
+    font-size: 6vw;
+  }
+  .container_destination h4 {
+    font-size: 5vw;
+  }
+  .container_destination_content_right_description h4 {
+    font-size: 7vw;
+  }
+  .container_destination_content_right_description_specifications h2 {
+    font-size: 10vw;
+  }
+  .container_destination_content_right_description_specifications_measurement {
+    font-size: 7vw;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1023px) {
+  .container_destination {
+    background-image: url(../../assets/destination/background-destination-tablet.jpg);
+  }
+  .container_destination .destination {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_destination_content {
+    margin-top: 10%;
+  }
+  .container_destination_content_right_description_specifications {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .container_destination_content_right_description h4 {
+    line-height: 3rem;
+  }
+  .container_destination_content_left_title {
+    justify-content: flex-start;
+  }
+  .container_destination_content_left_title h3 {
+    font-size: 3.5vw;
+    margin: 5%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .container_destination {
+    background-image: url(../../assets/destination/background-destination-desktop.jpg);
+  }
+  .container_destination .destination {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_destination_content {
+    margin-top: 12.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container_destination_content_left {
+    width: 50vw;
+  }
+  .container_destination_content_left_title h3 {
+    font-size: 2.5vw;
+  }
+  .container_destination_content_left_image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0;
+  }
+  .container_destination_content_left_image img {
+    width: 30vw;
+  }
+  .container_destination_content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+  }
+  .container_destination_content_right_destination_nav {
+    justify-content: space-between;
+    width: 75%;
+  }
+  .container_destination_content_right_destination_nav_link {
+    text-align: left;
+    font-size: 2.5vw;
+  }
+  .container_destination_content_right_description h1 {
+    text-align: left;
+    font-size: 10vw;
+  }
+  .container_destination_content_right_description h4 {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .container_destination_content_right_description #description_text {
+    text-align: left;
+    margin-right: 10%;
+  }
+  .container_destination_content_right_description hr {
+    width: 75%;
+    margin-right: 25%;
+  }
+  .container_destination_content_right_description_specifications {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container_destination_content_right_description_specifications_measurement {
+    text-align: center;
+  }
+  .container_destination_content_right h2 {
+    text-align: left;
+  }
+}
+@media screen and (max-height: 768px) and (min-width: 1024px) {
+  .container_destination_content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50vw;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container_destination {
+    background-image: url(../../assets/destination/background-destination-desktop.jpg);
+  }
+  .container_destination .destination {
+    border-bottom: #fff 2px solid !important;
+  }
+  .container_destination_content {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container_destination_content_left {
+    width: 50vw;
+  }
+  .container_destination_content_left_title h3 {
+    font-size: 2.5vw;
+  }
+  .container_destination_content_left_image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0;
+  }
+  .container_destination_content_left_image img {
+    width: 25vw;
+  }
+  .container_destination_content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+  }
+  .container_destination_content_right h2 {
+    text-align: left;
+  }
+  .container_destination_content_right_destination_nav {
+    justify-content: space-between;
+    width: 75%;
+  }
+  .container_destination_content_right_destination_nav_link {
+    font-size: 2.5vw;
+  }
+  .container_destination_content_right_description_specifications {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container_destination_content_right_description_specifications_measurement {
+    text-align: center;
+  }
+  .container_destination_content_right_description_nav .link {
+    text-align: left;
+    font-size: 2.5vw;
+  }
+  .container_destination_content_right_description h1 {
+    text-align: left;
+    font-size: 10vw;
+  }
+  .container_destination_content_right_description h4 {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .container_destination_content_right_description #description_text {
+    text-align: left;
+    margin-right: 10%;
+  }
+  .container_destination_content_right_description hr {
+    width: 75%;
+    margin-right: 25%;
+  }
+}/*# sourceMappingURL=destination.css.map */

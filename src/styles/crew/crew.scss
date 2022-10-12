@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
+.container_crew {
+    background-image: url(../../assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: auto;
+
+    &_content {
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+
+        // &_mobile {
+        //     height: 100%;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-around;
+        // }
+
+        // &_notebook {
+        //     display: none;
+        // }
+        &_title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3:nth-child(1) {
+                color: rgba(255, 255, 255, 0.25);
+                margin-right: 5vw;
+                font-family: "Barlow Condensed", sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.2rem;
+            }
+
+            h3:nth-child(2) {
+                font-family: "Barlow Condensed", sans-serif;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            h3 {
+                color: white;
+                letter-spacing: 2.7px;
+                font-size: 1.2rem;
+                font-family: "Barlow Condensed", sans-serif;
+                text-transform: uppercase;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+            }
+        }
+
+        &_display {
+            display: flex;
+            flex-direction: column-reverse;
+
+            &_left {
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+
+                &_description {
+
+                    text-align: center;
+
+                    h3 {
+                        color: white;
+                        letter-spacing: 2.7px;
+                        font-size: 1.4rem;
+                        font-family: "Barlow Condensed", sans-serif;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        letter-spacing: 0.2rem;
+                    }
+
+                    h2 {
+                        color: white;
+                        text-transform: uppercase;
+                        font-family: "Bellefair", serif;
+                        font-weight: 400;
+                    }
+
+                    .role {
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+
+
+                    h4 {
+                        font-size: 4vw;
+                        font-family: "Barlow", sans-serif;
+                        font-weight: 400;
+                        margin: 2vh 5vw;
+                        line-height: 1.75rem;
+                        color: rgba(208, 214, 249, 1);
+                    }
+                }
+
+                &_crew_nav {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    hr {
+                        border-color: rgba(255, 255, 255, 0.25);
+                        width: 80vw;
+                    }
+
+                    &_slider {
+                        margin-top: 2vh;
+                        width: 30%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+
+
+                        &_circle {
+                            width: 4vw;
+                            height: 4vw;
+                            border-radius: 50%;
+                            background-color: rgba(255, 255, 255, 0.25);
+
+                            // &:first-child {
+                            //     background-color: white;
+                            // }
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: rgba(255, 255, 255, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_right {
+                &_image {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    img {
+                        width: 50vw;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+// // super small screen design
+// @media screen and (max-width: "200px") {
+//     .title {
+//         flex-direction: column;
+//         text-align: center;
+
+//         h3 {
+//             font-size: 15vw;
+//             margin-top: 0;
+//         }
+//     }
+
+//     .destination_nav {
+//         flex-direction: column;
+//         align-items: center;
+
+//         a {
+//             width: fit-content;
+//             padding: 20%;
+//             font-size: 15vw;
+//         }
+//     }
+
+//     h1 {
+//         font-size: 12vw;
+//     }
+
+//     h4 {
+//         font-size: 9vw;
+//     }
+
+//     .description {
+//         h4 {
+//             font-size: 9vw;
+//         }
+//     }
+// }
+
+// // very small screen design
+// @media screen and (min-width: "201px") and (max-width: "280px") {
+
+//     h1 {
+//         font-size: 10vw;
+//     }
+
+//     h3,
+//     a {
+//         font-size: 6vw;
+//     }
+
+//     h4 {
+//         font-size: 5vw;
+//     }
+
+//     .description {
+//         h4 {
+//             font-size: 7vw;
+//         }
+//     }
+
+// }
+
+// tablet design
+@media screen and (min-width: "540px") and (max-width: "1023px") {
+
+
+    .container_crew {
+        background-image: url(../../assets/crew/background-crew-tablet.jpg);
+
+        .crew {
+            border-bottom: #fff 2px solid !important;
+        }
+
+        &_content {
+            margin-top: 10%;
+
+            // &_mobile {
+            //     display: block;
+            // }
+
+            // &_notebook {
+            //     display: none;
+            // }
+
+
+            &_title {
+                justify-content: flex-start;
+
+                h3 {
+                    font-size: 3vw;
+                    margin: 5%;
+                }
+            }
+
+            &_display {
+                display: flex;
+                flex-direction: column;
+
+
+                &_left {
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: 5vw;
+                    }
+
+                    &_description {
+                        h4 {
+                            font-size: 3vw;
+                            line-height: 3rem;
+                        }
+
+                        .role {
+                            font-size: 4vw;
+                        }
+                    }
+
+                    &_crew_nav {
+                        hr {
+                            display: none;
+                        }
+
+                        &_slider {
+
+                            &_circle {
+                                width: 2vw;
+                                height: 2vw;
+                            }
+                        }
+                    }
+                }
+
+                &_right {
+                    margin-top: 5vh;
+                }
+            }
+        }
+    }
+}
+
+// desktop design
+@media screen and (min-width: "1024px") and (max-width:"1440px") {
+
+    .container_crew {
+        background-image: url(../../assets/crew/background-crew-desktop.jpg);
+
+        .crew {
+            border-bottom: #fff 2px solid !important;
+        }
+
+        &_content {
+            margin-top: 20vh;
+
+            // &_mobile {
+            //     display: none;
+            // }
+
+            // &_notebook {
+            //     display: block;
+            // }
+
+            &_title {
+                justify-content: flex-start;
+                text-align: left;
+                margin-left: 10vw;
+
+                h3 {
+                    font-size: 2.5vw;
+                }
+            }
+
+            &_display {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height: 80vh;
+
+                &_right {
+                    width: 20vw;
+
+                    &_image {
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: flex-end;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &_left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    margin-left: 10vw;
+
+
+                    &_description {
+                        text-align: left;
+
+                        h2 {
+                            margin: 0;
+                            margin-bottom: 1.5vh;
+                            text-align: left;
+                            font-size: 5vw
+                        }
+
+                        h4 {
+                            line-height: 3.5vw;
+                            font-size: 2.5vw;
+                            margin: 0;
+                        }
+
+                        .role {
+                            margin: 0;
+                            margin-bottom: 1.5vh;
+                            font-size: 3vw;
+                        }
+                    }
+
+                    &_crew_nav {
+                        align-items: stretch;
+
+                        hr {
+                            display: none;
+                        }
+
+                        &_slider {
+                            width: 50%;
+                            justify-content: space-around;
+
+                            &_circle {
+                                width: 2vw;
+                                height: 2vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height:"768px") and (min-width:"1024px") {
+    .container_crew {
+        &_content {
+            &_right {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50vw;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// big desktop design
+@media screen and (min-width: "1440px") {
+
+    .container_crew {
+        background-image: url(../../assets/crew/background-crew-desktop.jpg);
+
+        .crew {
+            border-bottom: #fff 2px solid !important;
+        }
+
+        &_content {
+            margin-top: 20vh;
+
+            // &_mobile {
+            //     display: none;
+            // }
+
+            // &_notebook {
+            //     display: block;
+            // }
+
+
+            &_title {
+                justify-content: flex-start;
+                margin-left: 10vw;
+
+                h3 {
+                    font-size: 2.5vw;
+                }
+            }
+
+            &_display {
+                display: flex;
+                flex-direction: row;
+                height: 80vh;
+
+                &_crew_nav {
+                    hr {
+                        display: none;
+                    }
+                }
+
+                &_right {
+                    width: 20vw;
+
+                    &_image {
+                        //requires a grid template to fix the height issue
+                        height: 100%;
+                        align-items: flex-end;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &_left {
+                    margin-left: 10vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    &_description {
+                        text-align: left;
+
+                        h2 {
+                            margin: 0;
+                            margin-bottom: 1.5vh;
+                            font-size: 4vw
+                        }
+
+                        .role {
+                            margin: 0;
+                            margin-bottom: 1.5vh;
+                            font-size: 2.5vw;
+                        }
+
+                        h4 {
+                            line-height: 3vw;
+                            font-size: 2vw;
+                            margin: 0;
+                        }
+
+                    }
+
+                    &_crew_nav {
+                        align-items: stretch;
+
+                        hr {
+                            display: none;
+                        }
+
+                        &_slider {
+                            width: 50%;
+                            justify-content: space-around;
+
+                            &_circle {
+                                width: 1.5vw;
+                                height: 1.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

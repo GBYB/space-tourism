@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
+.container_destination {
+    background-image: url(../../assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: auto;
+
+    h1 {
+        color: white;
+    }
+
+    h3 {
+        color: white;
+        font-size: 1rem;
+        font-family: "Barlow Condensed", sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+    }
+
+    &_content {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+
+        &_left {
+            &_title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h3:nth-child(1) {
+                    color: rgba(255, 255, 255, 0.25);
+                    margin-right: 5vw;
+                    font-family: "Barlow Condensed", sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 0.2rem;
+                }
+
+                h3:nth-child(2) {
+                    font-family: "Barlow Condensed", sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+
+                h3 {
+                    letter-spacing: 2.7px;
+                }
+            }
+
+            &_image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5% 0;
+
+                img {
+                    width: 50vw;
+                }
+            }
+        }
+
+        &_right {
+            &_destination_nav {
+                display: flex;
+                justify-content: space-evenly;
+
+                &_link {
+                    border: none;
+                    padding: 0;
+
+                    font-size: 1.25rem;
+                    font-family: "Barlow Condensed", sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    letter-spacing: 0.2rem;
+
+                    color: rgba(208, 214, 249, 1);
+                    background: transparent;
+                    border-bottom: 2px solid transparent;
+
+                    &:nth-child(1) {
+                        border-bottom: 2px solid white;
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid #979797;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    border-bottom: 2px solid transparent;
+                    color: rgba(208, 214, 249, 1);
+
+                    &:nth-child(1) {
+                        border-bottom: 2px solid white;
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+
+            &_description {
+                text-align: center;
+
+                h1 {
+                    font-size: 15vw;
+                    margin: 2vh 0;
+                    text-transform: uppercase;
+                    font-family: "Bellefair", serif;
+                    font-weight: 400;
+                }
+
+
+                #description_text {
+                    //     font-size: 4vw;
+                    font-family: "Barlow",
+                        sans-serif;
+                    font-weight: 400;
+                    //     margin: 2vh 10vw;
+                    //     line-height: 1.75rem;
+                    color: rgba(208, 214, 249, 1);
+                }
+
+                hr {
+                    border-color: rgba(255, 255, 255, 0.25);
+                    width: 80vw;
+                }
+
+                &_specifications {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    h2 {
+                        color: white;
+                        text-transform: uppercase;
+                        font-family: "Bellefair", serif;
+                        font-weight: 400;
+                    }
+
+                    &_measurement {
+                        font-size: 4vw;
+                        font-family: "Barlow Condensed", sans-serif;
+                        font-weight: 400;
+                        margin: 2vh 10vw;
+                        line-height: 1.5rem;
+                        color: rgba(208, 214, 249, 1);
+                        letter-spacing: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// super small screen design
+@media screen and (max-width: "200px") {
+    .container_destination {
+        h1 {
+            font-size: 12vw;
+        }
+
+        h4 {
+            font-size: 9vw;
+        }
+
+        &_content {
+            &_left {
+                &_title {
+                    flex-direction: column;
+                    text-align: center;
+
+                    h3 {
+                        font-size: 15vw;
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            &_right {
+                &_destination_nav {
+                    flex-direction: column;
+                    align-items: center;
+
+                    a {
+                        width: fit-content;
+                        padding: 20%;
+                        font-size: 15vw;
+                    }
+                }
+
+                &_description {
+                    h4 {
+                        font-size: 9vw;
+                    }
+
+                    &_specifications {
+                        h2 {
+                            font-size: 12vw;
+                        }
+
+                        &_measurement {
+                            font-size: 9vw
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// very small screen design
+@media screen and (min-width: "201px") and (max-width: "280px") {
+    .container_destination {
+        h1 {
+            font-size: 10vw;
+        }
+
+        h3,
+        a {
+            font-size: 6vw;
+        }
+
+        h4 {
+            font-size: 5vw;
+        }
+
+        &_content {
+            &_right {
+                &_description {
+                    h4 {
+                        font-size: 7vw;
+                    }
+
+                    &_specifications {
+                        h2 {
+                            font-size: 10vw;
+                        }
+
+                        &_measurement {
+                            font-size: 7vw
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+// tablet design
+@media screen and (min-width: "540px") and (max-width: "1023px") {
+
+
+    .container_destination {
+        background-image: url(../../assets/destination/background-destination-tablet.jpg);
+
+        .destination {
+            border-bottom: #fff 2px solid !important;
+        }
+
+        &_content {
+            margin-top: 10%;
+
+            &_right {
+                &_description {
+                    &_specifications {
+                        flex-direction: row;
+                        justify-content: space-around;
+                    }
+
+                    h4 {
+                        line-height: 3rem;
+                    }
+                }
+            }
+
+            &_left {
+                &_title {
+                    justify-content: flex-start;
+
+                    h3 {
+                        font-size: 3.5vw;
+                        margin: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// // small laptop design
+// @media screen and (min-width: "769px") and (max-width:"1024px") {
+//     .navbar {
+//         a {
+//             &:nth-child(2) {
+//                 border-bottom: 2px solid white;
+//             }
+//         }
+//     }
+
+//     .destination {
+//         border-bottom: #fff 2px solid !important;
+//     }
+
+//     .title {
+//         h3 {
+//             font-size: 3.5vw;
+//         }
+//     }
+
+
+//     .destination_nav .link {
+//         font-size: 3.5vw;
+//     }
+
+//     .description h4 {
+//         line-height: 4rem;
+//     }
+// }
+
+// desktop design
+@media screen and (min-width: "1024px") and (max-width:"1440px") {
+
+    .container_destination {
+        background-image: url(../../assets/destination/background-destination-desktop.jpg);
+
+        .destination {
+            border-bottom: #fff 2px solid !important;
+        }
+
+        &_content {
+            margin-top: 12.5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &_left {
+                width: 50vw;
+
+                &_title {
+                    h3 {
+                        font-size: 2.5vw;
+                    }
+                }
+
+                &_image {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 5% 0;
+
+                    img {
+                        width: 30vw;
+                    }
+                }
+            }
+
+            &_right {
+                // margin-top: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50vw;
+                // height: 100vh;
+
+                &_destination_nav {
+                    justify-content: space-between;
+                    width: 75%;
+
+                    &_link {
+                        text-align: left;
+                        font-size: 2.5vw;
+                    }
+                }
+
+                &_description {
+
+                    h1 {
+                        text-align: left;
+                        font-size: 10vw
+                    }
+
+                    h4 {
+                        line-height: 2.5rem;
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+
+                    #description_text {
+                        text-align: left;
+                        margin-right: 10%;
+                    }
+
+                    hr {
+                        width: 75%;
+                        margin-right: 25%;
+                    }
+
+                    &_specifications {
+                        width: 75%;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        &_measurement {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                h2 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height:"768px") and (min-width:"1024px") {
+    .container_destination {
+        &_content {
+            &_right {
+                // margin-top: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50vw;
+                height: 100vh;
+            }
+        }
+    }
+}
+
+// big desktop design
+@media screen and (min-width: "1440px") {
+
+    .container_destination {
+        background-image: url(../../assets/destination/background-destination-desktop.jpg);
+
+        .destination {
+            border-bottom: #fff 2px solid !important;
+        }
+
+
+        &_content {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &_left {
+                width: 50vw;
+
+                &_title {
+                    h3 {
+                        font-size: 2.5vw;
+                    }
+                }
+
+                &_image {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 5% 0;
+
+                    img {
+                        width: 25vw;
+                    }
+                }
+            }
+
+            &_right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50vw;
+
+                h2 {
+                    text-align: left;
+                }
+
+                &_destination_nav {
+                    justify-content: space-between;
+                    width: 75%;
+
+                    &_link {
+                        font-size: 2.5vw;
+                    }
+                }
+
+                &_description {
+
+                    &_specifications {
+                        width: 75%;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        &_measurement {
+                            text-align: center;
+                        }
+                    }
+
+                    &_nav .link {
+                        text-align: left;
+                        font-size: 2.5vw;
+                    }
+
+                    h1 {
+                        text-align: left;
+                        font-size: 10vw
+                    }
+
+                    h4 {
+                        line-height: 3rem;
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+
+                    #description_text {
+                        text-align: left;
+                        margin-right: 10%;
+                    }
+
+                    hr {
+                        width: 75%;
+                        margin-right: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
